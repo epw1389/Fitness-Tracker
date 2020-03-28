@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+}
+
+.p{
+    margin-left: 100px;
+    color: white;
+}
+
+
+
+
+header{
+    background-color: #2533cf;
+    height: 100px;
+    
+    color: white;
+}
+
+header h1{
+    padding-top: 30px;
+    font-family:'Muli', sans-serif;
+}
+
+#form-div{
+    margin: auto;
+    width: 500px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+}
+
+#content-holder{
+    margin-top: 3%;
+    margin-bottom: 2%
+}
+
+
+#navbar{
+    width: 500px;
+    margin: auto;
+}
+
+#divCreateOrLoad{
+    width: 600px;
+    margin: auto;
+}
+#divCreateWorkout{
+ background-color: darkblue;
+ color: white;
+ height: 200px;
+ width: 350px;
+ border-radius: 10px;
+ text-align: center;
+ cursor: pointer;
+}
+
+#divCreateWorkout h4{
+    padding-top: 75px;
+}
+
+#divLoadWorkout{
+    background-color: red;
+    color: white;
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#divLoadWorkout h4{
+    padding-top: 75px;
+}
+
+#divLoadWorkouts{
+    margin: auto;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    width: 600px;
+    height: auto;
+    min-height: 500px;
+    max-height: 500px;
+    overflow-x: auto;
+}
+
+
+.whiteLink{
+    color: white;
+    text-decoration: none;
+}
+
+#divLoadWorkouts button:hover{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+#addAlert{
+    display: none;
+    width: 500px;
+    margin: auto;
+}
