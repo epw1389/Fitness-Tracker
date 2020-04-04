@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTrackerDB", { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false });
+mongoose.connect(process.env.MONGODB_URI || "./mongodb://localhost/fitnessTracker", { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false });
 
 
 app.post("/submitWorkout", ({ body }, res) => {
@@ -29,7 +29,7 @@ app.post("/submitWorkout", ({ body }, res) => {
     });
 });
 
- 
+
 app.get("/workouts", (req, res) => {
   db.Workout.find({})
     .populate("exercises")
@@ -41,8 +41,7 @@ app.get("/workouts", (req, res) => {
       res.json(err);
     });
 });
-
-
+t
 app.post("/addExercise", async (req, res) => {
   let exerciseInfo = {
       exercise_name: req.body.exercise_name,
